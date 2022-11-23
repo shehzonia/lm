@@ -16,7 +16,7 @@
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/aec557161b.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/ap.css">
+    <link rel="stylesheet" href="css/amenu.css">
 </head>
 <body>
 
@@ -97,43 +97,43 @@
             <div class="col-lg-4 col-md-6 col-sm-10 frm">
                 <form class="was-validated">
                     <div class="mb-3">
-                      <label for="Uname" class="form-label mt-1 font-weight-bold">CREATE NAME</label>
-                      <input type="text" class="form-control" id="Uname" placeholder="Enter your Menu name" name="m_name" required>
+                      <label for="Uname" class="form-label mt-1 font-weight-bold">ADD IMAGE</label>
+                      <input type="file" class="form-control" id="file"  name="image" required>
                       <div class="valid-feedback">Good</div>
                       <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                     <div class="mb-3">
                       <label for="item" class="form-label font-weight-bold">ITEM NAME</label>
-                      <input type="text" class="form-control" id="item1" placeholder="Enter your Item Name" name="item" required>
+                      <input type="text" class="form-control" id="item" placeholder="Enter your Item Name" name="item" required>
                       <div class="valid-feedback">Good</div>
                       <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                     <div class="mb-3">
                         <label for="item" class="form-label font-weight-bold">CATEGORY</label>
                         <br>
+                        <select name="category" id="category" class="form-select">
+                          <option value="">Choose category</option>
+                          <option value="1">Savory Items</option>
+                          <option value="2">Sweet Items</option>
+                          <option value="3">Side dishes</option>
+                          <option value="4">Beverages</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="item" class="form-label font-weight-bold">PRICE</label>
+                        <input type="text" class="form-control" id="price" placeholder="Enter price" name="price" required>
                         <div class="valid-feedback">Good</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                       </div>
                       <div class="mb-3">
-                        <label for="item" class="form-label font-weight-bold">ITEM 3</label>
-                        <input type="text" class="form-control" id="item3" placeholder="Enter your Item Name" name="item3" required>
-                        <div class="valid-feedback">Good</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="item5" class="form-label font-weight-bold">ITEM 5</label>
-                        <input type="text" class="form-control" id="item5" placeholder="Enter your Item Name" name="item5" required>
-                        <div class="valid-feedback">Good</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="item6" class="form-label font-weight-bold">ITEM 6</label>
-                        <input type="text" class="form-control" id="item6" placeholder="Enter your Item Name" name="item6" required>
-                        <div class="valid-feedback">Good</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <label for="item6" class="form-label font-weight-bold">CUSTOMIZATION</label>
+                          <br>
+                          <div class="form-group">
+                          <textarea name="custom" id="custom" class="form-control" cols="30" rows="6"></textarea>
+                        </div>
                       </div>
                       <br>
-                    <button type="submit" name="create" class="mb-5 mt-3">Create Package</button>
+                    <button type="submit" name="create" class="mb-5 mt-3">Add Item</button>
                   </form>
                   </div>
 
@@ -142,54 +142,43 @@
                   <div class="col-lg-4 col-md-6 col-sm-10 frmm">
                     <form class="was-validated">
                         <div class="mb-3">
-                          <label for="Uname" class="form-label mt-1 font-weight-bold">CREATE NAME</label>
-                          <input type="text" class="form-control" id="Uname" placeholder="Enter your package name" name="p_name" required>
+                          <label for="Uname" class="form-label mt-1 font-weight-bold">ADD IMAGE</label>
+                          <input type="file" class="form-control" id="file"  name="image" required>
                           <div class="valid-feedback">Good</div>
                           <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
                         <div class="mb-3">
-                          <label for="item" class="form-label font-weight-bold">ITEM 1</label>
-                          <input type="text" class="form-control" id="item1" placeholder="Enter your Item Name" name="item1" required>
+                          <label for="item" class="form-label font-weight-bold">ITEM NAME</label>
+                          <input type="text" class="form-control" id="item" placeholder="Enter your Item Name" name="item" required>
                           <div class="valid-feedback">Good</div>
                           <div class="invalid-feedback">Please fill out this field.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="item" class="form-label font-weight-bold">ITEM 2</label>
-                            <input type="text" class="form-control" id="item2" placeholder="Enter your Item Name" name="item2" required>
+                            <label for="item" class="form-label font-weight-bold">CATEGORY</label>
+                            <br>
+                            <select name="category" id="category" class="form-select">
+                              <option value="">Choose category</option>
+                              <option value="1">Savory Items</option>
+                              <option value="2">Sweet Items</option>
+                              <option value="3">Side dishes</option>
+                              <option value="4">Beverages</option>
+                            </select>
+                          </div>
+                          <div class="mb-3">
+                            <label for="item" class="form-label font-weight-bold">PRICE</label>
+                            <input type="text" class="form-control" id="price" placeholder="Enter price" name="price" required>
                             <div class="valid-feedback">Good</div>
                             <div class="invalid-feedback">Please fill out this field.</div>
                           </div>
                           <div class="mb-3">
-                            <label for="item" class="form-label font-weight-bold">ITEM 3</label>
-                            <input type="text" class="form-control" id="item3" placeholder="Enter your Item Name" name="item3" required>
-                            <div class="valid-feedback">Good</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                          </div>
-                        <div class="mb-3">
-                            <label for="item" class="form-label font-weight-bold">ITEM 4</label>
-                            <input type="text" class="form-control" id="item4" placeholder="Enter your Item Name" name="item4" required>
-                            <div class="valid-feedback">Good</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="item5" class="form-label font-weight-bold">ITEM 5</label>
-                            <input type="text" class="form-control" id="item5" placeholder="Enter your Item Name" name="item5" required>
-                            <div class="valid-feedback">Good</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="item6" class="form-label font-weight-bold">ITEM 6</label>
-                            <input type="text" class="form-control" id="item6" placeholder="Enter your Item Name" name="item6" required>
-                            <div class="valid-feedback">Good</div>
-                            <div class="invalid-feedback">Please fill out this field.</div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="custom" class="form-label font-weight-bold">CUSTOMIZATION</label>
-                          <textarea name="custom" id="custom" cols="30" rows="5"></textarea>
-                          
+                            <label for="item6" class="form-label font-weight-bold">CUSTOMIZATION</label>
+                              <br>
+                              <div class="form-group">
+                              <textarea name="custom" id="custom" class="form-control" cols="30" rows="6"></textarea>
+                            </div>
                           </div>
                           <br>
-                          <button type="submit" name="create" class="mb-5 mt-3">Create Package</button>
+                        <button type="submit" name="create" class="mb-5 mt-3">Add Item</button>
                       </form>
                       </div>
               
